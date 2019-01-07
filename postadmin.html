@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<title>USE CASES</title>
+    <meta name="keywords" content="" />
+	<meta name="description" content="" />
+<!--
+Concept Template
+http://www.templatemo.com/tm-397-concept
+-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+
+	<!-- CSS Bootstrap & Custom -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="/static/css/templatemo_style.css">
+
+
+
+</head>
+<body>
+
+	<div class="site-header">
+		<div class="main-navigation">
+			<div class="responsive_menu">
+			</div>
+			<div class="container">
+
+					<div class="col-md-12 main_menu">
+                        <ul>
+                            <li><a  href="{{ url_for('screen') }}">Admin</a></li>
+					        <li><a href="/logout">Logout</a></li>
+                        </ul>
+					</div> <!-- /.col-md-12 -->
+
+			</div> <!-- /.container -->
+		</div> <!-- /.main-navigation -->
+        {% block content %}
+            <div class="container">
+                {% for message in get_flashed_messages() %}
+                <div class="alert alert-warning">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    {{ message }}
+                </div>
+                {% endfor %}
+                {% block page_content %} {% endblock %}
+            </div>
+        {% endblock %}
+        <div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<a href="#" class="templatemo_logo">
+						<h1>{{ company }} HR Analytics Portal</h1>
+					</a> <!-- /.logo -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</div> <!-- /.site-header -->
+
+	<div id="menu-container">
+
+		<div class="content homepage" id="menu-1">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2 col-sm-6 col-md-offset-1">
+						<div class="gallery-item">
+								<div class="overlay-text">
+                                    <a href= "{{ url_for('qliksinglesignon_logic', query = "Attrition") }}"  title="ATTRITION Dashboards">
+                                        <img src="/static/img/churn.png" alt="">
+                                        <h2>Attrition</h2>
+                                    </a>
+								</div>
+						</div> <!-- /.gallery-item -->
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+						<div class="gallery-item">
+							<div class="image">
+								<div class="overlay-text">
+									<a href="{{ url_for('qliksinglesignon_logic', query = "Forecasting") }}" title="Forecasting Dashboards">
+                                        <img src="/static/img/planning.png" alt="image 3">
+                                        <h2>WorkForce<br>Planning</h2>
+									</a>
+								</div>
+							</div>
+						</div> <!-- /.gallery-item -->
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+						<div class="gallery-item">
+							<div class="image">
+								<div class="overlay-text">
+									<a href="{{ url_for('qliksinglesignon_logic', query = "Employability") }}" title="Employability Dashboards">
+                                        <img src="/static/img/engagment.png" alt="image 5">
+                                        <h2>Employability</h2>
+                                    </a>
+								</div>
+							</div>
+						</div> <!-- /.gallery-item -->
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6 col-md-offset-1">
+						<div class="gallery-item">
+							<div class="image">
+								<div class="overlay-text">
+									<a href="{{ url_for('qliksinglesignon_logic', query = "Profiling") }}" title="Profiling Dashboards">
+                                        <img src="/static/img/profile.png" alt="image 6">
+                                        <h2>Profiling</h2>
+                                    </a>
+								</div>
+							</div>
+						</div> <!-- /.gallery-item -->
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+						<div class="gallery-item">
+							<div class="image">
+								<div class="overlay-text">
+									<a href="{{ url_for('qliksinglesignon_logic', query = "Loyalty") }}" title="Loyalty Dashboards">
+                                        <img src="/static/img/feedback.png" alt="image 8">
+                                        <h2>Employee<br>Engagement</h2>
+                                    </a>
+								</div>
+							</div>
+						</div> <!-- /.gallery-item -->
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+						<div class="gallery-item">
+							<div class="image">
+								<div class="overlay-text">
+									<a href="{{ url_for('qliksinglesignon_logic', query = "General Summary") }}" title="General Summary Dashboards">
+                                        <img src="/static/img/hr.png" alt="image 9">
+                                        <h2>HR<br>Analytics</h2>
+                                    </a>
+								</div>
+							</div>
+						</div> <!-- /.gallery-item -->
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6 col-md-offset-3">
+
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+
+					</div> <!-- /.col-md-2 -->
+					<div class="col-md-2 col-sm-6">
+
+					</div> <!-- /.col-md-2 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.slide-item -->
+		</div> <!-- /.homepage -->
+
+	</div> <!-- /#menu-container -->
+
+	<div id="templatemo_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>Copyright &copy; 2018 Pegasus Knowledge Solutions Inc., USA</p>
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</div> <!-- /.templatemo_footer -->
+
+	<!-- Scripts -->
+	<script src="/static/js/jquery-1.10.2.min.js"></script>
+    <script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/modernizr.js"></script>
+	<script src="/static/js/bootstrap.js"></script>
+	<script src="/static/js/tabs.js"></script>
+	<script src="/static/js/jquery.lightbox.js"></script>
+	<script src="/static/js/templatemo_custom.js"></script>
+	<!--
+    	Free Responsive Template by templatemo
+    	http://www.templatemo.com
+	-->
+    <!-- templatemo 397 concept -->
+</body>
+</html>

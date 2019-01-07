@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
+  <!-- Bootstrap core CSS-->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="/static/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="/static/css/sb-admin.css" rel="stylesheet">
+  <!--  Admin style sheets-->
+   <link href="/static/css/adminstyle.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <ul class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="{{ url_for('screen') }}"><img src="E:/Work/BKAnalytics/static/img/PKSILogo.jpg" alt="LOGO" width="30" height="30"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <ul class="nav navbar-nav navbar-right" id="#mainNav">
+     	<li class="nav-item">
+             <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+      	</li>
+      </ul>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="User requests">
+          <a class="nav-link" href="{{ url_for('screen') }}">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">USER REQUESTS</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Bulk User Add">
+          <a class="nav-link" href="{{ url_for('bulk_user_add') }}">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">BULK USER ADD</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tool Usage">
+          <a class="nav-link" href="tables.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">TOOL USAGE</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Edit Privileges">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">EDIT PRIVILEGES</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="navbar.html">Navbar</a>
+            </li>
+            <li>
+              <a href="cards.html">Cards</a>
+            </li>
+          </ul>
+        </li>                  
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </ul>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">User Requests</li>
+      </ol>
+      <!-- Icon Cards-->
+      <form class="form-horizontal" action="/check_approve" method="post" id="admin_approve">
+        <div class="table-responsive">
+        <table class="table table-bordered table-striped table-highlight">
+            <thead>
+                <tr>
+                    <th>UserName</th>
+                    <th>Privileges</th>
+                    <th>Approve</th>
+                    <th>Reject</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td>{{item[0]}}<input type="hidden" name='username' value={{item[0]}}></td>
+                    <td>
+                        <select name='Privileges' form="admin_approve">
+                            <option value="empty"> </option>
+                            <option value="HR">HR</option>
+                            <option value="Compensation Analyst">Compensation Analyst</option>
+		                    <option value="HR Manager">HR Manager</option>
+		                    <option value="HR Lead">HR Lead</option>
+		                    <option value="HR Recruiter">HR Recruiter</option>
+		                    <option value="HR Director">HR Director</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class='radio'>
+                        <label><input type='radio' id='choice1' name={{item[0]}} value="approve" ></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class='radio'>
+                        <label><input type='radio' id='choice2' name={{item[0]}} value="reject" ></label>
+                        </div>
+                    </td>
+                    <td style="display:none;">
+                        <div class='radio'>
+                        <label><input type='radio' id='choice3' name={{item[0]}} value="reject1" checked></label>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+      </div>
+        <div class="wrapper">
+            <button type="submit" form ="admin_approve" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    <br>
+
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © 2018 . Pegasus Knowledge Solutions Inc., USA</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="{{ url_for('logout') }}">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="/static/vendor/chart.js/Chart.min.js"></script>
+    <script src="/static/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="/static/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="/static/js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="/static/js/sb-admin-datatables.min.js"></script>
+    <script src="/static/js/sb-admin-charts.min.js"></script>
+</body>
+
+</html>

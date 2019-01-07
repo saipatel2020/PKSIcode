@@ -1,0 +1,844 @@
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 23, in qlik_reports
+    a, use_case = ob1.qlik_render()
+TypeError: 'Response' object is not iterable
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 24, in qlik_reports
+    a, use_case = ob1.qlik_render()
+TypeError: 'Response' object is not iterable
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 24, in qlik_reports
+    a = ob1.q
+AttributeError: 'Qlik' object has no attribute 'q'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 250, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 29, in qlik_reports
+    a = ob1.q
+AttributeError: 'Qlik' object has no attribute 'q'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 250, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 29, in qlik_reports
+    a = ob1.q
+AttributeError: 'Qlik' object has no attribute 'q'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 250, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 29, in qlik_reports
+    print(ob1.q)
+AttributeError: 'Qlik' object has no attribute 'q'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 27, in qlik_reports
+    print(j1.q)
+AttributeError: 'Qlik' object has no attribute 'q'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 24, in qlik_reports
+    a,use_case = Qlik.qlik_render(self)
+TypeError: 'Response' object is not iterable
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 24, in qlik_reports
+    a,use_case = Qlik.qlik_render(self)
+TypeError: 'Response' object is not iterable
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 26, in qlik_reports
+    a,use_case = Qlik.qlik_render(self)
+TypeError: 'Response' object is not iterable
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 29, in qlik_reports
+    print("Hi " + option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])) + "_" + usecase)
+NameError: name 'usecase' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return g.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 32, in qlik_reports
+    url = q.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+NameError: name 'q' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 36, in qlik_reports
+    url = q.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+NameError: name 'q' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 36, in qlik_reports
+    url = q.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+NameError: name 'q' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 36, in qlik_reports
+    a = q
+NameError: name 'q' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 35, in qlik_reports
+    a = q
+NameError: name 'q' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 35, in qlik_reports
+    url = q.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+NameError: name 'q' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 37, in qlik_reports
+    url = q.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+NameError: name 'q' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 36, in qlik_reports
+    url = q.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'NoneType' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 37, in qlik_reports
+    url = q.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+NameError: name 'q' is not defined
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 36, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 36, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 37, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 38, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 38, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 39, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 40, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 42, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 42, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 42, in qlik_reports
+    url = a.create_qs_sheet_app_url(option + "_" + str.upper(str(current_user.data['preferredLanguage'][0])),
+AttributeError: 'Response' object has no attribute 'create_qs_sheet_app_url'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 43, in qlik_reports
+    app_name)
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 373, in create_qs_sheet_app_url
+    format(appid,sheetid,self.get_qps_ticket())
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 334, in get_qps_ticket
+    status_code, content = self.post(path,json_payload)
+ValueError: too many values to unpack (expected 2)
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 43, in qlik_reports
+    app_name)
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 404, in create_qs_sheet_app_url
+    format(appid,sheetid,self.get_qps_ticket())
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 365, in get_qps_ticket
+    status_code, content = self.post(path,json_payload)
+ValueError: too many values to unpack (expected 2)
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 43, in qlik_reports
+    app_name)
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 500, in create_qs_sheet_app_url
+    format(appid,sheetid,self.get_qps_ticket())
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 461, in get_qps_ticket
+    status_code, content = self.post(path,json_payload)
+ValueError: too many values to unpack (expected 2)
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 43, in qlik_reports
+    app_name)
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 500, in create_qs_sheet_app_url
+    format(appid,sheetid,self.get_qps_ticket())
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 461, in get_qps_ticket
+    status_code, content = self.post(path,json_payload)
+ValueError: too many values to unpack (expected 2)
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 43, in qlik_reports
+    app_name)
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 501, in create_qs_sheet_app_url
+    format(appid,sheetid,self.get_qps_ticket())
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 464, in get_qps_ticket
+    return status_code.get("Ticket")
+AttributeError: 'bytes' object has no attribute 'get'
+Exception on /qliksso [GET]
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\util\connection.py", line 83, in create_connection
+    raise err
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x00000196E3B1A3C8>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='peg3.pksi.com', port=4242): Max retries exceeded with url: /qrs/app?filter=stream.name%20eq%20'HR_R'&xrfkey=zNLaOjtZ2GHweMmy (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000196E3B1A3C8>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 155, in qliksinglesignon_logic
+    reports = ob.hrqliksinglesignon()
+  File "E:/Work/BKAnalytics - Copy/blogic.py", line 251, in hrqliksinglesignon
+    return qlik_bi.qlik_reports(config.QlikHrStream)
+  File "E:\Work\BKAnalytics - Copy\qlik_bi.py", line 43, in qlik_reports
+    app_name)
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 486, in create_qs_sheet_app_url
+    apps = self.get_qrs_app(filterparam='stream.name eq', filtervalue=streamname)
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 420, in get_qrs_app
+    return json.loads(self.get(path, filterparam, filtervalue).decode('utf-8'))
+  File "E:\Work\BKAnalytics - Copy\qlikConnect\qlikRender.py", line 106, in get
+    headers=self.headers, verify=self.root, cert=self.certificate)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\requests\sessions.py", line 521, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\SAI BHARGAV\Anaconda3\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='peg3.pksi.com', port=4242): Max retries exceeded with url: /qrs/app?filter=stream.name%20eq%20'HR_R'&xrfkey=zNLaOjtZ2GHweMmy (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000196E3B1A3C8>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',))
+Exception on /register [POST]
+Traceback (most recent call last):
+  File "C:\Users\patel\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\patel\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\patel\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\patel\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\patel\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\patel\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Work/pksi_sampleui/BKAnalyticsCopy/blogic.py", line 184, in register
+    cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+pyodbc.InterfaceError: ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified (0) (SQLDriverConnect)')
